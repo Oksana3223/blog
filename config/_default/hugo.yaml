@@ -4,18 +4,26 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 # Website name
-title: Hugo Academic CV Theme
+title: Оксана Чумаченко
 # Website URL
-baseURL: 'https://example.com/'
+baseURL: 'https://oksana3223.github.io/'
 
 ############################
 ## LANGUAGE
 ############################
 
-defaultContentLanguage: en
+defaultContentLanguage: ru
 hasCJKLanguage: false
 defaultContentLanguageInSubdir: false
 removePathAccents: true
+
+languages:
+  en:
+    weight: 1
+    title: "My Site"
+  ru:
+    weight: 2
+    title: "Мой сайт"
 
 ############################
 ## ADVANCED
@@ -25,8 +33,7 @@ build:
   writeStats: true
 enableGitInfo: false
 summaryLength: 30
-pagination:
-  pagerSize: 10
+paginate: 10
 enableEmoji: true
 enableRobotsTXT: true
 footnotereturnlinkcontents: <sup>^</sup>
@@ -39,9 +46,8 @@ outputs:
   section: [HTML, RSS]
 imaging:
   resampleFilter: lanczos
-  quality: 90
+  quality: 80
   anchor: smart
-  hint: picture
 timeout: 600000
 taxonomies:
   author: authors
